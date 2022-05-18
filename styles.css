@@ -1,0 +1,40 @@
+/* ____________ */
+/* Hero Section */
+/* ____________ */
+
+#hero {
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	height: 50vh;
+	padding: 2rem;
+	gap: 2rem;
+}
+
+#hero-text {
+	background-color: blue;
+}
+
+#searchbar {
+}
+
+#hero-slides {
+	display: flex;
+	justify-content: space-around;
+	gap: 0.1rem;
+}
+
+#hero-slides img {
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 0.4;
+}
+
+#cooking {
+}
+
+#writing {
+}
+
+#business {
+}
