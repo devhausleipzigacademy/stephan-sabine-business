@@ -1,3 +1,7 @@
+body {
+	background-color: bisque;
+}
+
 /* ____________ */
 /* Hero Section */
 /* ____________ */
@@ -5,36 +9,111 @@
 #hero {
 	display: flex;
 	justify-content: space-between;
-	width: 100vw;
 	height: 50vh;
-	padding: 2rem;
-	gap: 2rem;
+	padding: 1rem 2rem;
+	gap: 1rem;
 }
 
 #hero-text {
-	background-color: blue;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#hero-text p {
+	font-size: 5rem;
 }
 
 #searchbar {
+	display: flex;
+	position: relative;
+	left: 5vw;
+}
+
+#searchbar input {
+	height: 4rem;
+	width: 15rem;
+	border: none;
+}
+
+#searchbar button {
+	height: 100%;
+	font-weight: 600;
+	background-color: rgb(110, 166, 25);
+	padding: 1.5rem;
+}
+
+#searchbar button:active {
+	background-color: green;
 }
 
 #hero-slides {
+	flex: 3;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	gap: 0.1rem;
+}
+
+#hero-slides div {
+	width: 20%;
 }
 
 #hero-slides img {
 	height: 100%;
+	width: 100%;
 	object-fit: cover;
-	aspect-ratio: 0.4;
+	border-radius: 10px;
 }
 
 #cooking {
+	background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb);
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+#cooking-text {
+	display: flex;
+	justify-content: space-between;
+}
+
+#cooking-text p {
+	display: inline;
 }
 
 #writing {
+	background-image: url(https://images.unsplash.com/photo-1573600073955-f15b3b6caab7);
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	border-radius: 10px;
 }
 
 #business {
+	background-image: url(https://images.unsplash.com/photo-1531746020798-e6953c6e8e04);
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	border-radius: 10px;
 }
+
+/* ___________ */
+/* Hover shenanigans */
+/* ___________ */
+/* #cooking:hover p {
+    opacity: 0;
+}
+
+#cooking:hover {
+    width: 30vw;
+}
+
+#writing:hover {
+    width: 30vw;
+}
+
+#business:hover {
+    width: 30vw;
+} */
