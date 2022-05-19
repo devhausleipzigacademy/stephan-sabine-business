@@ -1,5 +1,10 @@
+h2 {
+	font-size: xx-large;
+}
+
 body {
 	background-color: bisque;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* ____________ */
@@ -9,8 +14,8 @@ body {
 #hero {
 	display: flex;
 	justify-content: space-between;
-	height: 50vh;
-	padding: 1rem 2rem;
+	height: 60vh;
+	padding: 1rem 0 1rem 2rem;
 	gap: 1rem;
 }
 
@@ -19,6 +24,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	position: relative;
+	left: 3%;
 }
 
 #hero-text p {
@@ -27,21 +34,24 @@ body {
 
 #searchbar {
 	display: flex;
-	position: relative;
-	left: 5vw;
+	width: fit-content;
+	/* position: relative;
+	left: 35%; */
+	box-shadow: -5px 5px 15px rgba(175, 175, 174, 0.46)
 }
 
 #searchbar input {
+	/* maybe change the value into vh+vw */
 	height: 4rem;
-	width: 15rem;
+	width: 20vw;
 	border: none;
 }
 
 #searchbar button {
 	height: 100%;
-	font-weight: 600;
+	font-size: x-large;
 	background-color: rgb(110, 166, 25);
-	padding: 1.5rem;
+	padding: 1rem;
 }
 
 #searchbar button:active {
@@ -52,52 +62,139 @@ body {
 	flex: 3;
 	display: flex;
 	justify-content: space-between;
-	gap: 0.1rem;
+	gap: 0.5rem;
 }
 
-#hero-slides div {
-	width: 20%;
+.right-side-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-#hero-slides img {
+.big-text {
+	font-size: 3rem;
+}
+
+.small-text {
+	font-size: small;
+}
+
+/* #hero-slides img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 	border-radius: 10px;
-}
+} */
 
 #cooking {
-	background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb);
-	height: 100%;
-	width: 100%;
+	background-image: url(https://images.unsplash.com/photo-1554151228-14d9def656e4);
 	background-size: cover;
+	width: 25%;
 	border-radius: 10px;
-}
-
-#cooking-text {
 	display: flex;
+	align-items: flex-end;
 	justify-content: space-between;
-}
-
-#cooking-text p {
-	display: inline;
+	padding: 0 1rem 2.5rem 3rem;
+	color: white;
+	font-size: x-large;
 }
 
 #writing {
 	background-image: url(https://images.unsplash.com/photo-1573600073955-f15b3b6caab7);
-	height: 100%;
-	width: 100%;
 	background-size: cover;
+	width: 25%;
 	border-radius: 10px;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 1.5rem;
 }
 
 #business {
 	background-image: url(https://images.unsplash.com/photo-1531746020798-e6953c6e8e04);
-	height: 100%;
-	width: 100%;
 	background-size: cover;
+	width: 25%;
+	border-radius: 10px;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 1.5rem;
+	grad
+}
+
+.slide-text-box {
+	background-color: rgb(18, 2, 51);
+	color: white;
+	font-size: x-large;
+	width: 4rem;
+	height: 4.5rem;
+}
+
+.slide-text-box p {
+	transform: rotate(270deg);
+	letter-spacing: 0.1rem;
+	position: relative;
+	bottom: -0.8rem
+}
+
+/* ___________ */
+/*  Portfolio  */
+/* ___________ */
+
+#portfolio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+#portfolio h2 {
+	padding: 1rem;
+}
+
+#course-catalogue {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+#course-catalogue p {
+	color: grey;
+}
+
+#course-catalogue p:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+#cards {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1rem 
+}
+
+#cards div {
+	width: 15vw;
+	height: 40vh;
 	border-radius: 10px;
 }
+
+#orange-card {
+	background-color: orange;
+}
+
+#green-card {
+	background-color: green;
+}
+
+#grey-card {
+	background-color: grey;
+}
+
+#blue-card {
+	background-color: navy;
+}
+
+
 
 /* ___________ */
 /* Hover shenanigans */
@@ -108,12 +205,15 @@ body {
 
 #cooking:hover {
     width: 30vw;
+	height: 70vh;
 }
 
 #writing:hover {
     width: 30vw;
+	height: 70vh;
 }
 
 #business:hover {
     width: 30vw;
+	height: 70vh;
 } */
