@@ -6,6 +6,16 @@ body {
 /* Hero Section */
 /* ____________ */
 
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem;
+}
+.logo .topnav .login #trial {
+	background-color: black;
+	display: inline-block;
+}
+
 #hero {
 	display: flex;
 	justify-content: space-between;
