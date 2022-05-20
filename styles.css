@@ -54,18 +54,18 @@ a {
 #hero {
 	display: flex;
 	justify-content: space-between;
-	height: 60vh;
+	height: 70vh;
 	padding: 1rem 0 1rem 2rem;
 	gap: 1rem;
 }
 
 #hero-text {
-	flex: 1;
+	flex: 2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	position: relative;
-	left: 3%;
+	left: 4%;
 }
 
 #hero-text p {
@@ -75,17 +75,15 @@ a {
 #searchbar {
 	display: flex;
 	width: fit-content;
-	/* position: relative;
-	left: 35%; */
 	box-shadow: -5px 5px 15px rgba(175, 175, 174, 0.46);
 }
 
 #searchbar input {
-	/* maybe change the value into vh+vw */
 	height: 4rem;
-	width: 20vw;
+	width: 15rem;
 	border: none;
-	padding: 5px;
+	padding: 5px 35px;
+	font-size: large;
 }
 
 #searchbar button {
@@ -100,7 +98,7 @@ a {
 }
 
 #hero-slides {
-	flex: 3;
+	flex: 5;
 	display: flex;
 	justify-content: space-between;
 	gap: 0.5rem;
@@ -120,17 +118,15 @@ a {
 	font-size: small;
 }
 
-/* #hero-slides img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-	border-radius: 10px;
-} */
-
 #cooking {
-	background-image: url(https://images.unsplash.com/photo-1554151228-14d9def656e4);
+	background: linear-gradient(
+			to bottom,
+			rgba(255, 135, 135, 0) 60%,
+			rgba(0, 0, 0, 0.653)
+		),
+		url(https://images.unsplash.com/photo-1554151228-14d9def656e4);
 	background-size: cover;
-	width: 25%;
+	width: 30%;
 	border-radius: 10px;
 	display: flex;
 	align-items: flex-end;
@@ -141,9 +137,14 @@ a {
 }
 
 #writing {
-	background-image: url(https://images.unsplash.com/photo-1573600073955-f15b3b6caab7);
+	background: linear-gradient(
+			to bottom,
+			rgba(255, 135, 135, 0) 60%,
+			rgba(0, 0, 0, 0.653)
+		),
+		url(https://images.unsplash.com/photo-1573600073955-f15b3b6caab7);
 	background-size: cover;
-	width: 25%;
+	width: 30%;
 	border-radius: 10px;
 	display: flex;
 	align-items: flex-end;
@@ -151,10 +152,14 @@ a {
 }
 
 #business {
-	background-image: url(https://images.unsplash.com/photo-1531746020798-e6953c6e8e04);
-	/* background: linear-gradient(to top, rgba(117, 19, 93, 0.73)), url("https://images.unsplash.com/photo-1531746020798-e6953c6e8e04"); */
+	background: linear-gradient(
+			to bottom,
+			rgba(255, 135, 135, 0) 60%,
+			rgba(0, 0, 0, 0.653)
+		),
+		url("https://images.unsplash.com/photo-1531746020798-e6953c6e8e04");
 	background-size: cover;
-	width: 25%;
+	width: 30%;
 	border-radius: 10px;
 	display: flex;
 	align-items: flex-end;
@@ -238,22 +243,61 @@ a {
 /* ___________ */
 /* Hover shenanigans */
 /* ___________ */
-/* use transform scale not change height or width */
-/* #cooking:hover p {
-    opacity: 0;
+
+.slide-alt-text {
+	opacity: 0;
+}
+
+/* .slide-alt-text {
+	background-color: rgb(18, 2, 51);
+	color: white;
+	font-size: x-large;
+	width: 4rem;
+	height: 4.5rem;
+}
+
+#cooking:hover p {
+opacity: 0;
 }
 
 #cooking:hover {
-    width: 30vw;
-	height: 70vh;
+transform: scale(1.2);
+
 }
 
 #writing:hover {
-    width: 30vw;
-	height: 70vh;
+transform: scale(1.2);
+}
+
+#writing:hover .slide-text-box p {
+opacity: 0
+}
+
+#writing:hover .slide-text-box {
+opacity: 0
+}
+
+#writing:hover .slide-alt-text {
+color: white;
+opacity: 100
 }
 
 #business:hover {
-    width: 30vw;
-	height: 70vh;
+transform: scale(1.2);
+position: relative;
+right: 3%;
+top: 8%;
+}
+
+#business:hover .slide-text-box p {
+opacity: 0
+}
+
+#business:hover .slide-text-box {
+opacity: 0
+}
+
+#business:hover .slide-alt-text {
+color: white;
+opacity: 100
 } */
