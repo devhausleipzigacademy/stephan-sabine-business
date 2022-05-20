@@ -16,36 +16,70 @@ a {
 /* Header section */
 /* ____________ */
 
-#navbar {
+/* #mainbox {
 	display: flex;
 	justify-content: space-between;
 	padding: 1.5rem;
-	font-family: "Courier New", Courier, monospace;
+} */
+
+.flexcontainer {
+	display: flex;
+	justify-content: space-between;
+	padding: 3rem;
 }
-.logo {
-	font-weight: 900;
-	font-size: x-large;
+
+.flexcontainer a {
+	color: grey;
+}
+
+#flexitem1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2.3rem;
+}
+
+#logo {
+	font-weight: 800;
+	font-size: xx-large;
 	letter-spacing: -0.08rem;
+	padding-right: 3rem;
 }
+
 #beautyspot {
 	color: darkcyan;
 }
 
-#topnav a {
-	padding: 0.5rem;
-	color: grey;
+#flexitem1 a:hover {
+	text-decoration: underline;
+	color: black;
 }
 
-#login {
-	/* padding-left: 4rem; */
+#login:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#flexitem2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
 }
 
 #trial {
 	background-color: black;
+	width: 6rem;
+	text-align: center;
 	padding: 0.5rem;
-	border-radius: 10px;
+	border-radius: 8em;
 	color: white;
 }
+
+/* #trial a:hover {
+	text-decoration: none;
+
+} */
 
 /* ____________ */
 /* Hero Section */
