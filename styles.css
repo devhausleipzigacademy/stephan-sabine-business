@@ -11,8 +11,9 @@ body {
 a {
 	text-decoration: none;
 }
+
 /* ____________ */
-/* Hero Section */
+/* Header section */
 /* ____________ */
 
 #navbar {
@@ -45,6 +46,10 @@ a {
 	border-radius: 10px;
 	color: white;
 }
+
+/* ____________ */
+/* Hero Section */
+/* ____________ */
 
 #hero {
 	display: flex;
@@ -80,6 +85,7 @@ a {
 	height: 4rem;
 	width: 20vw;
 	border: none;
+	padding: 5px;
 }
 
 #searchbar button {
@@ -232,6 +238,7 @@ a {
 /* ___________ */
 /* Hover shenanigans */
 /* ___________ */
+/* use transform scale not change height or width */
 /* #cooking:hover p {
     opacity: 0;
 }
